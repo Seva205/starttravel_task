@@ -1,0 +1,377 @@
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.container {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo img {
+  width: 100px;
+}
+.about-us ul {
+  list-style-type: none;
+  display: flex;
+  gap: 55px;
+  padding: 35px;
+  margin: 15px;
+  margin-left: 250px;
+  /* margin-top: 40px; */
+}
+.about-us ul li {
+  display: inline;
+  font-size: 18px;
+  font-weight: 600;
+}
+.about-us ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+.about-us ul li a:hover {
+  color: #000;
+}
+
+.about-us {
+  font-size: 16px bold;
+}
+.icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 20px;
+
+  size: 40px;
+}
+
+.icons i {
+  font-size: 20px;
+  color: #333;
+}
+
+.icons i:hover {
+  color: #000;
+}
+#restpart {
+  background-image: url("./2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 10px 0;
+  color: white;
+  text-align: center;
+}
+
+.Rest > h2 {
+  padding: 100px 100px;
+  color: white;
+  font: 50px SegoeUI-Semi-Bold;
+  margin-bottom: 40px;
+}
+.paragraph {
+  color: #fff;
+  font: 16px SegoeUI-Regular;
+  margin-bottom: 40px;
+}
+#restpart .button button {
+  background-color: #46b6f3;
+  color: #fff;
+  padding: 20px 60px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#restpart .button button:hover {
+  background-color: #5cb0e0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #01a1d1;
+  font: 36px SegoeUI-Semi-Bold;
+}
+
+.tour-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+.tour-filter select,
+.tour-filter .search button {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 16px SegoeUI-Regular, sans-serif;
+  color: #aaaaaa;
+}
+
+/* Tour grid styling */
+.tour-grid {
+  display: grid;
+  gap: 20px;
+  margin-top: 100px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  padding: 10px;
+  justify-items: center;
+}
+
+.tour-item {
+  flex: 1 1 calc(33.333% - 20px);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+.item-1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.item-2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.item-3 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+.tour-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.tour-item h3 {
+  padding: 10px;
+}
+#maptour {
+  background-image: url("https://starttravel.az/themes/starttravel/assets/css/icons/geo-map.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 250px 0;
+  color: #01a1d1;
+  text-align: center;
+}
+
+#maptour .container {
+  position: relative;
+  z-index: 1;
+}
+
+#maptour::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /z-index: 0;
+}
+
+#maptour p {
+  font-size: 18px;
+  color: #01a1d1;
+  padding-left: 600px;
+  padding-bottom: 200px;
+}
+
+#maptour h2 {
+  font-size: 36px;
+  color: #01a1d1;
+  margin-bottom: 20px;
+}
+
+#maptour .button button {
+  background-color: rgb(17, 213, 253);
+  color: rgb(251, 251, 252);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#maptour .button button:hover {
+  background-color: blue;
+  color: #fff;
+}
+#maptour p.all-tours {
+  font-size: 18px;
+  color: #01a1d1;
+  text-align: right;
+  margin-bottom: 20px;
+}
+#maptour h2 {
+  color: #01a1d1;
+}
+#customer h3 {
+  color: black;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  text-align: center;
+  padding-left: 350px;
+  margin-top: 40px;
+}
+.customers {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: #fff;
+
+  margin: 34px;
+  padding: 44px;
+}
+.customer-1.h5 {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+.customers {
+  background-color: #fff;
+  /* border: 1px solid #ddd;
+        border-radius: 8px ;
+        border-color: #555;
+        padding: 20px; */
+  max-width: 300px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+#customer.p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+#customer.img {
+  justify-items: auto;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+#customer h5 {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+.customers.customer-1 {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  border-color: #555;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+#customer.h5 {
+  color: #000;
+  font-weight: 500;
+  margin-left: 100px;
+}
+.customer-1 {
+  border: 2px solid rgb(215, 215, 215);
+  padding: 50px;
+  margin: 20px;
+  border-radius: 12px;
+  border: shadow;
+}
+.customer-2 {
+  border: 2px solid rgb(215, 215, 215);
+  padding: 50px;
+  margin: 20px;
+  border-radius: 12px;
+  border: shadow;
+}
+.logofooter {
+  width: 50%;
+  height: 50%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+footer span {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 15px;
+}
+
+footer.container {
+  display: flex;
+
+  justify-content: space-between;
+}
+footer .col-3 {
+  /* width: 100%; */
+  display: inline;
+
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+footer.social-icons {
+  display: inline;
+  margin-right: 10px;
+  position: absolute;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+footer.social-icons img {
+  max-width: 40px;
+  height: auto;
+}
+
+footer .coopright {
+  background-color: #5cb0e0;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+footer .coopright p {
+  display: inline;
+
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  margin: 0;
+  font-size: 14px;
+}
+
+.row {
+  display: flex;
+}
